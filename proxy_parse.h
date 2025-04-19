@@ -1,10 +1,4 @@
-/*
- * proxy_parse.h -- a HTTP Request Parsing Library.
- *
- * Written by: Matvey Arye
- * For: COS 518 
- * 
- */
+
 
  #include <stdio.h>
  #include <stdlib.h>
@@ -30,6 +24,8 @@
     The buf and buflen fields are used internally to maintain the parsed request
     line.
   */
+ typedef struct ParsedRequest ParsedRequest;
+
  struct ParsedRequest {
       char *method; 
       char *protocol; 
